@@ -28,12 +28,100 @@
       }
     }
   }
-
   .btn-line {
     width: 30px;
     height: 3px;
     background: #fff;
     margin-bottom: 5px;
     @include easeOut;
+  }
+}
+
+// Menu Overlay
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.9;
+  visibility: hidden;
+
+  &.show {
+    visibility: visible;
+  }
+
+  .menu-branding,
+  .menu-nav {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  // Nav Side
+  .menu-nav {
+    margin: 0;
+    padding: 0;
+    background: darken($primary-color, 5);
+    list-style: none;
+    transform: translate3d(0, -100%, 0);
+    @include easeOut;
+
+    .nav-item {
+      font-size: 3rem;
+
+      &.current > a {
+        color: $third-color;
+      }
+
+      .nav-link {
+        color: $secondary-color;
+        font-weight: 600;
+        padding: 1rem 0;
+        text-decoration: none;
+      }
+
+      .nav-link:hover {
+        color: $third-color;
+        @include easeOut;
+      }
+    }
+
+    // When The Show Class Is Added
+    &.show {
+      // Slide In From Top
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  // Branding Side
+  .menu-branding {
+    margin: 0;
+    padding: 0;
+    background: lighten($secondary-color, 5);
+    // opacity: 0.4;
+    transform: translate3d(0, 100%, 0);
+    @include easeOut;
+
+    // When The Show Class Is Added
+    &.show {
+      // Slide In From Bottom
+      transform: translate3d(0, 0, 0);
+    }
+
+    .portrait {
+      width: 250px;
+      height: 250px;
+      background: url("../img/portrait.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transform: rotate(90deg);
+      border-radius: 50%;
+      border: solid 5px $third-color;
+    }
   }
 }
