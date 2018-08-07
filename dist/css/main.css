@@ -185,6 +185,14 @@ main {
       border-color: #cfb53b;
       transition: all 0.5s ease-out; }
 
+.boxes {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center; }
+  .boxes div {
+    font-size: 2rem;
+    margin: 0.8rem 0; }
+
 .btn, .btn-light, .btn-dark {
   display: block;
   padding: 0.5rem 1rem;
@@ -250,7 +258,9 @@ main {
     align-items: center;
     justify-items: center; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  #contact .boxes div {
+    font-size: 1.4rem; } }
 
 @media screen and (max-width: 580px) {
   body {

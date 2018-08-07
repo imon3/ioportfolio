@@ -122,6 +122,18 @@ main {
   }
 }
 
+// Contact Page
+.boxes {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+
+  div {
+    font-size: 2rem;
+    margin: 0.8rem 0;
+  }
+}
+
 // Button Styles
 .btn {
   display: block;
