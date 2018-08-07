@@ -8,9 +8,9 @@
 body {
   @include background;
   background: $primary-color;
-  color: #fff;
+  color: set-text-color($primary-color);
   height: 100%;
-  margin: none;
+  margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
 }
@@ -50,7 +50,7 @@ header {
 
 main {
   padding: 4rem;
-  height: 100%;
+  height: calc(100vh - 60px);
 
   .icons {
     margin-top: 1rem;
@@ -76,3 +76,75 @@ main {
     }
   }
 }
+
+// About Page
+.about-info {
+  display: grid;
+  grid-template-areas: "bioimage bio bio";
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.bio-image {
+  grid-area: bioimage;
+}
+
+.bio {
+  grid-area: bio;
+  font-size: 1.3rem;
+}
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: darken($primary-color, 10);
+  color: $third-color;
+  height: 60px;
+}
+
+// Projects Page
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.7rem;
+
+  img {
+    width: 100%;
+    border: #fff solid 3px;
+
+    &:hover {
+      opacity: 0.5;
+      border-color: $third-color;
+      @include easeOut;
+    }
+  }
+}
+
+// Button Styles
+.btn {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+
+  &:hover {
+    background: $secondary-color;
+    color: $third-color;
+    @include easeOut;
+  }
+}
+
+.btn-light {
+  @extend .btn;
+  background: lighten($primary-color, 20);
+}
+
+.btn-dark {
+  @extend .btn;
+  background: darken($primary-color, 50);
+  color: set-text-color($primary-color);
+}
+
+@import "mobile";
