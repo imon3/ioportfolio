@@ -179,7 +179,7 @@ main {
   grid-gap: 0.7rem; }
   .projects img {
     width: 100%;
-    border: #fff solid 3px; }
+    border: #7851a9 solid 4px; }
     .projects img:hover {
       opacity: 0.5;
       border-color: #cfb53b;
@@ -224,11 +224,14 @@ main {
   main {
     display: block;
     align-items: center;
-    text-align: center; }
+    text-align: center;
+    height: calc(100vh - 60px); }
     main h1.lg-heading {
       font-size: 4rem;
       line-height: 1;
       margin-bottom: 1rem; }
+  #work {
+    height: calc(100% - 60px); }
   .menu {
     left: 0;
     font-size: 1.5rem; }

@@ -22,12 +22,17 @@
     display: block;
     align-items: center;
     text-align: center;
+    height: calc(100vh - 60px);
 
     h1.lg-heading {
       font-size: 4rem;
       line-height: 1;
       margin-bottom: 1rem;
     }
+  }
+
+  #work {
+    height: calc(100% - 60px);
   }
 
   .menu {
