@@ -22,22 +22,13 @@
     display: block;
     align-items: center;
     text-align: center;
-    height: calc(100vh - 60px);
+    // height: calc(100% - 60px);
 
     h1.lg-heading {
       font-size: 4rem;
       line-height: 1;
       margin-bottom: 1rem;
     }
-  }
-
-  #work {
-    height: calc(100% - 60px);
-  }
-
-  main#about,
-  main#contact {
-    height: calc(100% - 60px);
   }
 
   .menu {
@@ -60,7 +51,7 @@
     .menu-nav {
       height: 75vh;
       transform: translate3d(100%, 0, 0);
-      font-size: 2rem;
+      font-size: 1.1rem;
     }
 
     .menu-branding {
@@ -99,10 +90,6 @@
     font-size: 0.8rem;
   }
 
-  main {
-    padding: 2rem;
-  }
-
   main#home h1,
   main#about h1,
   main#work h1,
@@ -113,6 +100,12 @@
 
   .projects {
     grid-template-columns: 1fr;
+    min-height: 100%;
+    margin-bottom: -60px;
+  }
+
+  .bio {
+    font-size: 1.1rem;
   }
 
   .menu .menu-nav .nav-item .nav-link {
@@ -121,7 +114,7 @@
 
   main#contact {
     .boxes div {
-      font-size: 1.2rem;
+      font-size: 1rem;
 
       .secd1,
       .secd2 {
