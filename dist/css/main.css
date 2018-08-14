@@ -105,7 +105,8 @@
       margin-bottom: 1rem; }
   #work {
     height: calc(100% - 60px); }
-  main#about {
+  main#about,
+  main#contact {
     height: calc(100% - 60px); }
   .menu {
     left: 0;
@@ -157,8 +158,8 @@
     font-size: 1.3rem; }
   main#contact .boxes div {
     font-size: 1.2rem; }
-    main#contact .boxes div #secd1,
-    main#contact .boxes div #secd2 {
+    main#contact .boxes div .secd1,
+    main#contact .boxes div .secd2 {
       display: block; } }
 
 * {
@@ -310,7 +311,8 @@ main {
       margin-bottom: 1rem; }
   #work {
     height: calc(100% - 60px); }
-  main#about {
+  main#about,
+  main#contact {
     height: calc(100% - 60px); }
   .menu {
     left: 0;
@@ -362,6 +364,6 @@ main {
     font-size: 1.3rem; }
   main#contact .boxes div {
     font-size: 1.2rem; }
-    main#contact .boxes div #secd1,
-    main#contact .boxes div #secd2 {
+    main#contact .boxes div .secd1,
+    main#contact .boxes div .secd2 {
       display: block; } }
