@@ -97,17 +97,11 @@
   main {
     display: block;
     align-items: center;
-    text-align: center;
-    height: calc(100vh - 60px); }
+    text-align: center; }
     main h1.lg-heading {
       font-size: 4rem;
       line-height: 1;
       margin-bottom: 1rem; }
-  #work {
-    height: calc(100% - 60px); }
-  main#about,
-  main#contact {
-    height: calc(100% - 60px); }
   .menu {
     left: 0;
     font-size: 1.5rem; }
@@ -124,7 +118,7 @@
     .menu .menu-nav {
       height: 75vh;
       transform: translate3d(100%, 0, 0);
-      font-size: 2rem; }
+      font-size: 1.1rem; }
     .menu .menu-branding {
       height: 25vh;
       transform: translate3d(-100%, 0, 0); }
@@ -144,8 +138,6 @@
 @media screen and (max-width: 580px) {
   body {
     font-size: 0.8rem; }
-  main {
-    padding: 2rem; }
   main#home h1,
   main#about h1,
   main#work h1,
@@ -153,17 +145,24 @@
     margin-top: 10vh;
     font-size: 2.5rem; }
   .projects {
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr;
+    min-height: 100%;
+    margin-bottom: -60px; }
+  .bio {
+    font-size: 1.1rem; }
   .menu .menu-nav .nav-item .nav-link {
     font-size: 1.3rem; }
   main#contact .boxes div {
-    font-size: 1.2rem; }
+    font-size: 1rem; }
     main#contact .boxes div .secd1,
     main#contact .boxes div .secd2 {
       display: block; } }
 
 * {
   box-sizing: border-box; }
+
+html {
+  height: 100vh; }
 
 body {
   background: #444;
@@ -214,8 +213,7 @@ header {
   color: #7851a9; }
 
 main {
-  padding: 4rem;
-  height: calc(100vh - 60px); }
+  padding: 4rem; }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -229,6 +227,9 @@ main {
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
+
+main#about {
+  min-height: calc(100vh - 60px); }
 
 .about-info {
   display: grid;
@@ -255,7 +256,12 @@ main {
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 0.7rem; }
+  grid-gap: 0.7rem;
+  justify-items: center;
+  align-items: center; }
+  .projects .item {
+    max-width: 400px;
+    max-height: 300px; }
   .projects img {
     width: 100%;
     border: #7851a9 solid 4px; }
@@ -263,6 +269,12 @@ main {
       opacity: 0.5;
       border-color: #cfb53b;
       transition: all 0.5s ease-out; }
+
+.foot {
+  margin-top: 10px; }
+
+main#contact {
+  height: calc(100vh - 60px); }
 
 .boxes {
   display: grid;
@@ -303,17 +315,11 @@ main {
   main {
     display: block;
     align-items: center;
-    text-align: center;
-    height: calc(100vh - 60px); }
+    text-align: center; }
     main h1.lg-heading {
       font-size: 4rem;
       line-height: 1;
       margin-bottom: 1rem; }
-  #work {
-    height: calc(100% - 60px); }
-  main#about,
-  main#contact {
-    height: calc(100% - 60px); }
   .menu {
     left: 0;
     font-size: 1.5rem; }
@@ -330,7 +336,7 @@ main {
     .menu .menu-nav {
       height: 75vh;
       transform: translate3d(100%, 0, 0);
-      font-size: 2rem; }
+      font-size: 1.1rem; }
     .menu .menu-branding {
       height: 25vh;
       transform: translate3d(-100%, 0, 0); }
@@ -350,8 +356,6 @@ main {
 @media screen and (max-width: 580px) {
   body {
     font-size: 0.8rem; }
-  main {
-    padding: 2rem; }
   main#home h1,
   main#about h1,
   main#work h1,
@@ -359,11 +363,15 @@ main {
     margin-top: 10vh;
     font-size: 2.5rem; }
   .projects {
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr;
+    min-height: 100%;
+    margin-bottom: -60px; }
+  .bio {
+    font-size: 1.1rem; }
   .menu .menu-nav .nav-item .nav-link {
     font-size: 1.3rem; }
   main#contact .boxes div {
-    font-size: 1.2rem; }
+    font-size: 1rem; }
     main#contact .boxes div .secd1,
     main#contact .boxes div .secd2 {
       display: block; } }
