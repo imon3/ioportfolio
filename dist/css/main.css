@@ -253,6 +253,9 @@ main#about {
   color: #cfb53b;
   height: 60px; }
 
+main#work {
+  min-height: calc(100% - 60px); }
+
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -269,9 +272,6 @@ main#about {
       opacity: 0.5;
       border-color: #cfb53b;
       transition: all 0.5s ease-out; }
-
-.foot {
-  margin-top: 10px; }
 
 main#contact {
   height: calc(100vh - 60px); }

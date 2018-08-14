@@ -113,6 +113,10 @@ main#about {
 }
 
 // Projects Page
+main#work {
+  min-height: calc(100% - 60px);
+}
+
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -135,10 +139,6 @@ main#about {
       @include easeOut;
     }
   }
-}
-
-.foot {
-  margin-top: 10px;
 }
 
 // Contact Page
