@@ -85,13 +85,13 @@
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (min-width: 769) and (max-width: 1170px) {
   .bio {
     font-size: 3rem; }
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -258,13 +258,11 @@ main#work {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 0.7rem;
+  grid-gap: 2rem 10rem;
   justify-items: center;
   align-items: center; }
-  .projects .item {
-    max-width: 400px;
-    max-height: 300px; }
+  .projects .item a .google-img span {
+    margin-left: 4px; }
   .projects img {
     width: 100%;
     border: #7851a9 solid 4px; }
@@ -303,13 +301,13 @@ main#contact {
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (min-width: 769) and (max-width: 1170px) {
   .bio {
     font-size: 3rem; }
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 768px) {
   main {
